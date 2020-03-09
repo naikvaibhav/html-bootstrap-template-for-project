@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+.container {
+  background-color: blue;
+  width: 80vw;
+  height: 30vh;
+  margin: auto;
+  margin-top: 5%;
+}
+p {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100vw;
+    background-color: #3f3fbf;
+  }
+  p {
+    font-size: 2rem;
+    padding-top: 4%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    background-color: #068400;
+    height: 70vh;
+  }
+  p {
+    padding-top: 25vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: 100vh;
+    background-color: #ea000b;
+  }
+  p {
+    padding-top: 35vh;
+  }
+}
