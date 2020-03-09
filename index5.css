@@ -8,3 +8,13 @@
 body {
   background-color: rgb(221, 221, 221);
 }
+
+.signUpForm {
+  padding-top: 2vh;
+}
+
+@media screen and (min-width: 768px) {
+  .signUpForm {
+    width: 500px;
+  }
+}
