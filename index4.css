@@ -11,11 +11,14 @@ body {
 
 .loginForm {
   padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .card {
   box-shadow: 0px 3px 20px 2px #35baee;
+  /* margin-bottom: 2vh; */
 }
+
 .forgotPassword {
   display: block;
 }
