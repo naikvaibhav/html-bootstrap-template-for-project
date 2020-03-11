@@ -244,7 +244,7 @@
       </ul>
     </nav> -->
 
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
       <button type="button" class="navbar-toggler" onclick="myFunction()">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -475,10 +475,10 @@
       //   });
 
       function myFunction() {
-        var x = document.getElementById("sidebar");
+        var x = document.querySelector("#sidebar");
+        console.log(x);
         if (x.style.display === "none") {
           x.style.display = "block";
-          $("#sidebar").animate({ left: 0 });
         } else {
           x.style.display = "none";
         }
