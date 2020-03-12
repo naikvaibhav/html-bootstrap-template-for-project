@@ -87,7 +87,7 @@
               <div class="card-body">
                 <form>
                   <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 col-sm-12">
                       <label for="inputEmail4">First Name</label>
                       <input
                         type="email"
@@ -95,7 +95,7 @@
                         id="inputEmail4"
                       />
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 col-sm-12">
                       <label for="inputPassword4">Last Name</label>
                       <input
                         type="password"
@@ -132,11 +132,19 @@
                     </div>
                   </div>
                   <div class="form-row">
-                    <div class="form-group col-md-4">
-                      <label for="userRole">User Role</label>
+                    <div class="form-group col-md-3 col-sm-3 mr-2 mb-0">
+                      <!-- <label for="userRole">User Role</label> -->
+                     
+                        <label>User Role</label>
+   
                     </div>
-                    <div class="form-group col-md-4">
-                      <div class="custom-control custom-radio">
+                    <div class="form-group col-md-4 col-sm-4">
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">Admin User</label>
+                      </div>
+                   
+                      <!-- <div class="custom-control custom-radio">
                         <input
                           type="radio"
                           id="customRadio1"
@@ -146,7 +154,7 @@
                         <label class="custom-control-label" for="customRadio1"
                           >Admin</label
                         >
-                      </div>
+                      </div> -->
                       <!-- <div class="form-check">
                         <input
                           class="form-check-input"
@@ -161,8 +169,12 @@
                         </label>
                       </div> -->
                     </div>
-                    <div class="form-group col-md-4">
-                      <div class="custom-control custom-radio">
+                    <div class="form-group col-md-4 col-sm-4">
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">Normal User</label>
+                      </div>
+                      <!-- <div class="custom-control custom-radio">
                         <input
                           type="radio"
                           id="customRadio2"
@@ -172,7 +184,7 @@
                         <label class="custom-control-label" for="customRadio2"
                           >Normal User</label
                         >
-                      </div>
+                      </div> -->
                       <!-- <div class="form-check">
                         <input
                           class="form-check-input"
@@ -188,7 +200,7 @@
                       </div> -->
                     </div>
                   </div>
-                  <div class="form-row">
+                  <!-- <div class="form-row">
                     <div class="form-group col-md-4 col-form-label">
                       <label for="inputEmail4">User Name</label>
                     </div>
@@ -199,7 +211,22 @@
                         id="inputEmail4"
                       />
                     </div>
-                     </div>
+                     </div> -->
+
+
+                      <!-- <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                        </div>
+                      </div> -->
+                      <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-3 col-form-label">Username</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" id="inputPassword" placeholder="Username">
+                        </div>
+                      </div>
+                   
                      <button
                      type="submit"
                      class="btn btn-outline-success btn-block loginBtn"

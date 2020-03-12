@@ -141,13 +141,29 @@
         /* border-radius: 50%;
         width: 50%;
         height: 15%; */
-        display: block;
+        display: flex;
         margin: auto;
-        vertical-align: middle;
+        /* vertical-align: middle; */
         width: 55px;
         height: 55px;
-        border-radius: 50%;
+        /* border-radius: 50%; */
         margin-top: 5%;
+      }
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+      body {
+        margin-bottom: 90px;
+      }
+
+      .footer {
+        position: absolute;
+        height: 60px;
+        bottom: 0;
+        width: 100%;
+        line-height: 60px;
+        background-color: #f5f5f5;
       }
     </style>
   </head>
@@ -159,7 +175,7 @@
         >
           <!-- spacer col -->
         </div>
-        <div class="col-1 px-3 px-md-0 pt-1" style="text-align: center;">
+        <div class="col-1 px-3 px-md-0 pt-1 mx-auto">
           <!-- toggler -->
           <a
             data-toggle="collapse"
@@ -185,7 +201,7 @@
           <div
             class="navbar-dark bg-dark text-white position-fixed h-100 align-self-start w-sidebar"
           >
-            <img src="profile_user.jpg" alt="" />
+            <img src="profile_user.jpg" alt="" class="rounded-circle" />
             <p style="text-align: center;">User name</p>
             <h6 class="px-3 pt-3">
               Fixed Menu
@@ -487,6 +503,12 @@
         </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="container-fluid text-center">
+        <span class="text-muted text-black">&copy; Copyright 2020</span>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
